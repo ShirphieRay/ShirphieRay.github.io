@@ -2,7 +2,7 @@
 title: Shirphie
 header-img: "img/green.jpg"
 tagline: "cn"  
-description: "abc|123"  
+description: "肖雪|雷世光"  
 baseurl: ""
 url: "http://shirphie"  
 
@@ -10,18 +10,18 @@ url: "http://shirphie"
 owner: 
   name: " leishiguang"
   email: lx6ting@163.com
-  bio: "写就是写的报酬"
+  bio: "千里之行，始于足下"
 
 # Data
 gavatar: http://dreamofbook.qiniudn.com/Az..png
 favicon: img/favicon.png
 
-douban_username:  
+douban_username:  “霁氏”
 twitter_username: 
 github_username: leishiguang
 facebook_username: 
-weibo_username: 
-zhihu_username: 
+weibo_username: "肖雪021"
+zhihu_username: "霁氏夫人"
 
 # Build settings  
 # use Github Flavored Markdown !important  
