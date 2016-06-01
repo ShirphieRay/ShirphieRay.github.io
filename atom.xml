@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shirphie.com/"/>
-  <updated>2016-06-01T05:49:01.000Z</updated>
+  <updated>2016-06-01T08:43:02.000Z</updated>
   <id>http://shirphie.com/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图床测试</title>
+    <link href="http://shirphie.com/2016/06/01/2016-06-01-%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/"/>
+    <id>http://shirphie.com/2016/06/01/2016-06-01-图床测试/</id>
+    <published>2016-05-31T16:00:00.000Z</published>
+    <updated>2016-06-01T08:43:02.000Z</updated>
+    
+    <content type="html">&lt;p&gt;图床测试&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtczd.com1.z0.glb.clouddn.com/2016-06-01-test3.jpg&quot; alt=&quot;test3&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;图床测试&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtczd.com1.z0.glb.clouddn.com/2016-06-01-test3.jpg&quot; alt=&quot;test3&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="测试" scheme="http://shirphie.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="测试" scheme="http://shirphie.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>《一个人的朝圣》读后感</title>
@@ -56,9 +82,9 @@
       <category term="读后感" scheme="http://shirphie.com/categories/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
     
     
-      <category term="读后感" scheme="http://shirphie.com/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
-    
       <category term="写作" scheme="http://shirphie.com/tags/%E5%86%99%E4%BD%9C/"/>
+    
+      <category term="读后感" scheme="http://shirphie.com/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
     
   </entry>
   
@@ -74,33 +100,6 @@
     <summary type="html">
     
       &lt;h2 id=&quot;With-You&quot;&gt;&lt;a href=&quot;#With-You&quot; class=&quot;headerlink&quot; title=&quot;With You&quot;&gt;&lt;/a&gt;With You&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="blog" scheme="http://shirphie.com/categories/blog/"/>
-    
-    
-      <category term="历程" scheme="http://shirphie.com/tags/%E5%8E%86%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>肖雪，生日快乐！</title>
-    <link href="http://shirphie.com/2016/04/20/2016-4-20-happy-birthday/"/>
-    <id>http://shirphie.com/2016/04/20/2016-4-20-happy-birthday/</id>
-    <published>2016-04-19T16:00:00.000Z</published>
-    <updated>2016-06-01T06:04:22.000Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;肖雪，20岁了哦&quot;&gt;&lt;a href=&quot;#肖雪，20岁了哦&quot; class=&quot;headerlink&quot; title=&quot;肖雪，20岁了哦~&quot;&gt;&lt;/a&gt;肖雪，20岁了哦~&lt;/h2&gt;&lt;p&gt;祝你生日快乐！！&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;嘿嘿，shirphie.com，这个域名就是我们的个人博客啦！&lt;/p&gt;
-&lt;p&gt;加油！&lt;/p&gt;
-&lt;p&gt;和你持续进步~！充满阳光与活力~&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;肖雪，20岁了哦&quot;&gt;&lt;a href=&quot;#肖雪，20岁了哦&quot; class=&quot;headerlink&quot; title=&quot;肖雪，20岁了哦~&quot;&gt;&lt;/a&gt;肖雪，20岁了哦~&lt;/h2&gt;&lt;p&gt;祝你生日快乐！！&lt;/p&gt;
     
     </summary>
     
@@ -152,6 +151,33 @@
     
     
       <category term="励志" scheme="http://shirphie.com/tags/%E5%8A%B1%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>肖雪，生日快乐！</title>
+    <link href="http://shirphie.com/2016/04/20/2016-4-20-happy-birthday/"/>
+    <id>http://shirphie.com/2016/04/20/2016-4-20-happy-birthday/</id>
+    <published>2016-04-19T16:00:00.000Z</published>
+    <updated>2016-06-01T06:04:22.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;肖雪，20岁了哦&quot;&gt;&lt;a href=&quot;#肖雪，20岁了哦&quot; class=&quot;headerlink&quot; title=&quot;肖雪，20岁了哦~&quot;&gt;&lt;/a&gt;肖雪，20岁了哦~&lt;/h2&gt;&lt;p&gt;祝你生日快乐！！&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;嘿嘿，shirphie.com，这个域名就是我们的个人博客啦！&lt;/p&gt;
+&lt;p&gt;加油！&lt;/p&gt;
+&lt;p&gt;和你持续进步~！充满阳光与活力~&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;肖雪，20岁了哦&quot;&gt;&lt;a href=&quot;#肖雪，20岁了哦&quot; class=&quot;headerlink&quot; title=&quot;肖雪，20岁了哦~&quot;&gt;&lt;/a&gt;肖雪，20岁了哦~&lt;/h2&gt;&lt;p&gt;祝你生日快乐！！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="http://shirphie.com/categories/blog/"/>
+    
+    
+      <category term="历程" scheme="http://shirphie.com/tags/%E5%8E%86%E7%A8%8B/"/>
     
   </entry>
   
