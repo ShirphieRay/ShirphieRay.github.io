@@ -42,11 +42,73 @@
   </entry>
   
   <entry>
+    <title>七牛图床初次使用体会</title>
+    <link href="http://shirphie.com/2016/06/01/2016-06-01-%E4%B8%83%E7%89%9B%E5%9B%BE%E5%BA%8A%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/"/>
+    <id>http://shirphie.com/2016/06/01/2016-06-01-七牛图床使用心得/</id>
+    <published>2016-05-31T16:00:00.000Z</published>
+    <updated>2016-06-01T09:49:01.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本人初次接触图床，周围许多人推荐七牛，也便尝试用起来。一是为个人主页奠定良好土壤，而后也是增加一些知识储备以被未来的建站打算。&lt;br&gt;成功在个人主页贴出了一张图片之后，便也把各种流程纪录下来，期待着多多交流，相互成长。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;图床的要求&quot;&gt;&lt;a href=&quot;#图床的要求&quot; class=&quot;headerlink&quot; title=&quot;图床的要求&quot;&gt;&lt;/a&gt;图床的要求&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;稳定、快速&lt;br&gt;嗯，国内很多云图片的服务商，如新浪微博相册之类，这样看似足够快速、稳定，但潜在风险也是十分大，谁也说不准什么时候就终止服务，始终受制于新浪等公司。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;具备文件外链地址，且规则简单&lt;br&gt;规则简单的外链地址，关系到图床的备份。所谓简单规则就是你上传任何一个图片文件，无需提示就知道该图片文件的引用地址是什么。如图片123.jpg上传之后，访问的地址就是xxxx/123.jpg，放在下级目录，那对应的地址就增加一层目录。简单明了的规则可以使得图床的本地备份非常容易。即使遇到将来迫不得已要转移图床，也可以通过SQL命令批量修改文章数据库，而无需手工修改每篇文章图片地址。同时也便于给每张图片队友的文章ID编号，查找图片更是一目了然。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;文件上传下载方便&lt;br&gt;如果这个操作太过繁复，那将十分影响写作效率。具体是否合适，也是需要适用之后才能知道。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;提供域名绑定服务&lt;br&gt;如果能绑定自己域名，图床搬家后等待新的解析生效即可，文章数据库都不用做任何修改，更为省事。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;黑白名单防盗链&lt;br&gt;个人图床建议用白名单限制，即指定域名才能够访问。另外需要注意最好禁止浏览器直接访问，以避免使用特殊手段直接下载。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;七牛简介&quot;&gt;&lt;a href=&quot;#七牛简介&quot; class=&quot;headerlink&quot; title=&quot;七牛简介&quot;&gt;&lt;/a&gt;七牛简介&lt;/h2&gt;&lt;p&gt;嗯，简介就自行参阅其官方主页了。&lt;a href=&quot;http://www.qiniu.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;链接&lt;/a&gt;&lt;br&gt;测试使用了这么一回，也是认为七牛能满足我的日常需求。只是存在一个不足就是，因为自己的主页没有备案，便无法使用独立域名。&lt;/p&gt;
+&lt;h2 id=&quot;七牛使用步骤&quot;&gt;&lt;a href=&quot;#七牛使用步骤&quot; class=&quot;headerlink&quot; title=&quot;七牛使用步骤&quot;&gt;&lt;/a&gt;七牛使用步骤&lt;/h2&gt;&lt;p&gt;参考：&lt;a href=&quot;http://www.jianshu.com/p/6dce6094bf61&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何使用七牛云做图床？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上面这篇文章讲述了一些高级的用法，使用插件工具自动上传，使用命令行上传。&lt;br&gt;而我也还处于测试阶段，就也使用最小白的点开主页，手动选择图片，手动复制外链的方法了。&lt;/p&gt;
+&lt;p&gt;基本步骤就是这样：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;登录打开七牛云网页个人存储空间&lt;/li&gt;
+&lt;li&gt;选择自己的资源仓库&lt;/li&gt;
+&lt;li&gt;上传图片&lt;/li&gt;
+&lt;li&gt;复制外链&lt;/li&gt;
+&lt;li&gt;粘贴到 Markdown&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;配合MWeb自动上传&quot;&gt;&lt;a href=&quot;#配合MWeb自动上传&quot; class=&quot;headerlink&quot; title=&quot;配合MWeb自动上传&quot;&gt;&lt;/a&gt;配合MWeb自动上传&lt;/h2&gt;&lt;p&gt;在MWeb中，有这么一项自动将本地图片上传到七牛的服务。&lt;br&gt;MWeb的官方文档：&lt;br&gt;&lt;a href=&quot;http://zh.mweb.im/mweb-1.9.3-release.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MWeb 1.9.3 发布！图床支持七牛&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtczd.com1.z0.glb.clouddn.com/2016-06-01-UploadQiniu.png&quot; alt=&quot;UploadQiniu&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;存在问题&quot;&gt;&lt;a href=&quot;#存在问题&quot; class=&quot;headerlink&quot; title=&quot;存在问题&quot;&gt;&lt;/a&gt;存在问题&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;配有相机翻转信息的jpg图片，在hexo中无法正确识别，会出现翻转的问题。&lt;br&gt;解决办法：在MWeb中如果图片显示不正确，则需要使用图片编辑工具先调整一下图片。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;域名未备案，七牛提供的服务有限；&lt;br&gt;解决办法：争取备案——短期内不太可取，或者将就使用七牛的免费服务；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;MWeb中，无法自动本地图片路径替换为外链；&lt;br&gt;解决办法：除了等待MWeb的更新之外，先手动替换。MWeb以外部模式打开文档库，编辑好了图片博客，将本地图片上传至图床之后，复制一个图片等地址，截取一段固定的文本，如&lt;code&gt;http://7xtczd.com1.z0.glb.clouddn.com/2016-06-01-&lt;/code&gt;，并将文本中的&lt;code&gt;/images/&lt;/code&gt;，替换为该段文本即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;图床是否必要&quot;&gt;&lt;a href=&quot;#图床是否必要&quot; class=&quot;headerlink&quot; title=&quot;图床是否必要&quot;&gt;&lt;/a&gt;图床是否必要&lt;/h2&gt;&lt;p&gt;老实说，目前为并未发现使用图床的必要性。也就如前言中所言，自己的博文配图不多，一个月下来也就这么几张。折腾这么一个图床，倒也是背离了专注写文章的初衷。&lt;br&gt;便也就此点到为止，渐渐地养成专注写博文的习惯，期待着不断进度。&lt;/p&gt;
+&lt;h2 id=&quot;参考文献&quot;&gt;&lt;a href=&quot;#参考文献&quot; class=&quot;headerlink&quot; title=&quot;参考文献&quot;&gt;&lt;/a&gt;参考文献&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.lushaojun.com/1490.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WordPress博客图床心得&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/6dce6094bf61&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何使用七牛云做图床？&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本人初次接触图床，周围许多人推荐七牛，也便尝试用起来。一是为个人主页奠定良好土壤，而后也是增加一些知识储备以被未来的建站打算。&lt;br&gt;成功在个人主页贴出了一张图片之后，便也把各种流程纪录下来，期待着多多交流，相互成长。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="个人主页" scheme="http://shirphie.com/categories/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/"/>
+    
+    
+      <category term="个人主页" scheme="http://shirphie.com/tags/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/"/>
+    
+  </entry>
+  
+  <entry>
     <title>《一个人的朝圣》读后感</title>
     <link href="http://shirphie.com/2016/05/15/2016-05-15-%E3%80%8A%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%9D%E5%9C%A3%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
     <id>http://shirphie.com/2016/05/15/2016-05-15-《一个人的朝圣》读后感/</id>
     <published>2016-05-14T16:00:00.000Z</published>
-    <updated>2016-06-01T05:49:01.000Z</updated>
+    <updated>2016-06-01T09:48:39.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;前几日母亲节的时候，在闲聊中，肖雪的母亲谈到她最近在书店购买了这本书，聊到这本书的封面简介，也聊到这本书和我之前读过的一本《徒步中国》类似，都是关于一个人徒步走很远的路的故事。回头和肖雪聊，从她那也得到了一些关于这本书的评价。正好自己又想读一本未曾出现在自己计划中的书，我就也把这本书找来翻一翻了。&lt;/p&gt;
 &lt;p&gt;另外，这也是我头一次很正式地写一篇读后感，期待能以此渐渐培养更好的阅读习惯，帮助自己更好地总结自己阅读的书籍。同时，藉此锻炼自己的写作能力，便于自己更好地分享自己，也作为自己建设个人主页的一块基石。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -93,7 +155,7 @@
     <link href="http://shirphie.com/2016/04/21/2016-4-21-with-you/"/>
     <id>http://shirphie.com/2016/04/21/2016-4-21-with-you/</id>
     <published>2016-04-20T16:00:00.000Z</published>
-    <updated>2016-06-01T06:04:04.000Z</updated>
+    <updated>2016-06-01T09:47:49.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;With-You&quot;&gt;&lt;a href=&quot;#With-You&quot; class=&quot;headerlink&quot; title=&quot;With You&quot;&gt;&lt;/a&gt;With You&lt;/h2&gt;</content>
     
