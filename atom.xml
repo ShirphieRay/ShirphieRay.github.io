@@ -5,150 +5,15 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shirphie.com/"/>
-  <updated>2016-06-01T08:43:02.000Z</updated>
+  <updated>2016-06-01T09:47:49.000Z</updated>
   <id>http://shirphie.com/</id>
   
   <author>
-    <name>肖雪 | 雷世光</name>
+    <name>肖雪</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>图床测试</title>
-    <link href="http://shirphie.com/2016/06/01/2016-06-01-%E5%9B%BE%E5%BA%8A%E6%B5%8B%E8%AF%95/"/>
-    <id>http://shirphie.com/2016/06/01/2016-06-01-图床测试/</id>
-    <published>2016-05-31T16:00:00.000Z</published>
-    <updated>2016-06-01T08:43:02.000Z</updated>
-    
-    <content type="html">&lt;p&gt;图床测试&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtczd.com1.z0.glb.clouddn.com/2016-06-01-test3.jpg&quot; alt=&quot;test3&quot;&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;图床测试&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtczd.com1.z0.glb.clouddn.com/2016-06-01-test3.jpg&quot; alt=&quot;test3&quot;&gt;&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="测试" scheme="http://shirphie.com/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="测试" scheme="http://shirphie.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>七牛图床初次使用体会</title>
-    <link href="http://shirphie.com/2016/06/01/2016-06-01-%E4%B8%83%E7%89%9B%E5%9B%BE%E5%BA%8A%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/"/>
-    <id>http://shirphie.com/2016/06/01/2016-06-01-七牛图床使用心得/</id>
-    <published>2016-05-31T16:00:00.000Z</published>
-    <updated>2016-06-01T09:49:01.000Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本人初次接触图床，周围许多人推荐七牛，也便尝试用起来。一是为个人主页奠定良好土壤，而后也是增加一些知识储备以被未来的建站打算。&lt;br&gt;成功在个人主页贴出了一张图片之后，便也把各种流程纪录下来，期待着多多交流，相互成长。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;图床的要求&quot;&gt;&lt;a href=&quot;#图床的要求&quot; class=&quot;headerlink&quot; title=&quot;图床的要求&quot;&gt;&lt;/a&gt;图床的要求&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;稳定、快速&lt;br&gt;嗯，国内很多云图片的服务商，如新浪微博相册之类，这样看似足够快速、稳定，但潜在风险也是十分大，谁也说不准什么时候就终止服务，始终受制于新浪等公司。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;具备文件外链地址，且规则简单&lt;br&gt;规则简单的外链地址，关系到图床的备份。所谓简单规则就是你上传任何一个图片文件，无需提示就知道该图片文件的引用地址是什么。如图片123.jpg上传之后，访问的地址就是xxxx/123.jpg，放在下级目录，那对应的地址就增加一层目录。简单明了的规则可以使得图床的本地备份非常容易。即使遇到将来迫不得已要转移图床，也可以通过SQL命令批量修改文章数据库，而无需手工修改每篇文章图片地址。同时也便于给每张图片队友的文章ID编号，查找图片更是一目了然。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;文件上传下载方便&lt;br&gt;如果这个操作太过繁复，那将十分影响写作效率。具体是否合适，也是需要适用之后才能知道。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;提供域名绑定服务&lt;br&gt;如果能绑定自己域名，图床搬家后等待新的解析生效即可，文章数据库都不用做任何修改，更为省事。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;黑白名单防盗链&lt;br&gt;个人图床建议用白名单限制，即指定域名才能够访问。另外需要注意最好禁止浏览器直接访问，以避免使用特殊手段直接下载。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;七牛简介&quot;&gt;&lt;a href=&quot;#七牛简介&quot; class=&quot;headerlink&quot; title=&quot;七牛简介&quot;&gt;&lt;/a&gt;七牛简介&lt;/h2&gt;&lt;p&gt;嗯，简介就自行参阅其官方主页了。&lt;a href=&quot;http://www.qiniu.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;链接&lt;/a&gt;&lt;br&gt;测试使用了这么一回，也是认为七牛能满足我的日常需求。只是存在一个不足就是，因为自己的主页没有备案，便无法使用独立域名。&lt;/p&gt;
-&lt;h2 id=&quot;七牛使用步骤&quot;&gt;&lt;a href=&quot;#七牛使用步骤&quot; class=&quot;headerlink&quot; title=&quot;七牛使用步骤&quot;&gt;&lt;/a&gt;七牛使用步骤&lt;/h2&gt;&lt;p&gt;参考：&lt;a href=&quot;http://www.jianshu.com/p/6dce6094bf61&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何使用七牛云做图床？&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;上面这篇文章讲述了一些高级的用法，使用插件工具自动上传，使用命令行上传。&lt;br&gt;而我也还处于测试阶段，就也使用最小白的点开主页，手动选择图片，手动复制外链的方法了。&lt;/p&gt;
-&lt;p&gt;基本步骤就是这样：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;登录打开七牛云网页个人存储空间&lt;/li&gt;
-&lt;li&gt;选择自己的资源仓库&lt;/li&gt;
-&lt;li&gt;上传图片&lt;/li&gt;
-&lt;li&gt;复制外链&lt;/li&gt;
-&lt;li&gt;粘贴到 Markdown&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;配合MWeb自动上传&quot;&gt;&lt;a href=&quot;#配合MWeb自动上传&quot; class=&quot;headerlink&quot; title=&quot;配合MWeb自动上传&quot;&gt;&lt;/a&gt;配合MWeb自动上传&lt;/h2&gt;&lt;p&gt;在MWeb中，有这么一项自动将本地图片上传到七牛的服务。&lt;br&gt;MWeb的官方文档：&lt;br&gt;&lt;a href=&quot;http://zh.mweb.im/mweb-1.9.3-release.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MWeb 1.9.3 发布！图床支持七牛&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtczd.com1.z0.glb.clouddn.com/2016-06-01-UploadQiniu.png&quot; alt=&quot;UploadQiniu&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;存在问题&quot;&gt;&lt;a href=&quot;#存在问题&quot; class=&quot;headerlink&quot; title=&quot;存在问题&quot;&gt;&lt;/a&gt;存在问题&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;配有相机翻转信息的jpg图片，在hexo中无法正确识别，会出现翻转的问题。&lt;br&gt;解决办法：在MWeb中如果图片显示不正确，则需要使用图片编辑工具先调整一下图片。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;域名未备案，七牛提供的服务有限；&lt;br&gt;解决办法：争取备案——短期内不太可取，或者将就使用七牛的免费服务；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;MWeb中，无法自动本地图片路径替换为外链；&lt;br&gt;解决办法：除了等待MWeb的更新之外，先手动替换。MWeb以外部模式打开文档库，编辑好了图片博客，将本地图片上传至图床之后，复制一个图片等地址，截取一段固定的文本，如&lt;code&gt;http://7xtczd.com1.z0.glb.clouddn.com/2016-06-01-&lt;/code&gt;，并将文本中的&lt;code&gt;/images/&lt;/code&gt;，替换为该段文本即可。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;图床是否必要&quot;&gt;&lt;a href=&quot;#图床是否必要&quot; class=&quot;headerlink&quot; title=&quot;图床是否必要&quot;&gt;&lt;/a&gt;图床是否必要&lt;/h2&gt;&lt;p&gt;老实说，目前为并未发现使用图床的必要性。也就如前言中所言，自己的博文配图不多，一个月下来也就这么几张。折腾这么一个图床，倒也是背离了专注写文章的初衷。&lt;br&gt;便也就此点到为止，渐渐地养成专注写博文的习惯，期待着不断进度。&lt;/p&gt;
-&lt;h2 id=&quot;参考文献&quot;&gt;&lt;a href=&quot;#参考文献&quot; class=&quot;headerlink&quot; title=&quot;参考文献&quot;&gt;&lt;/a&gt;参考文献&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.lushaojun.com/1490.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WordPress博客图床心得&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/6dce6094bf61&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何使用七牛云做图床？&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本人初次接触图床，周围许多人推荐七牛，也便尝试用起来。一是为个人主页奠定良好土壤，而后也是增加一些知识储备以被未来的建站打算。&lt;br&gt;成功在个人主页贴出了一张图片之后，便也把各种流程纪录下来，期待着多多交流，相互成长。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="个人主页" scheme="http://shirphie.com/categories/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/"/>
-    
-    
-      <category term="个人主页" scheme="http://shirphie.com/tags/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《一个人的朝圣》读后感</title>
-    <link href="http://shirphie.com/2016/05/15/2016-05-15-%E3%80%8A%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%9D%E5%9C%A3%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
-    <id>http://shirphie.com/2016/05/15/2016-05-15-《一个人的朝圣》读后感/</id>
-    <published>2016-05-14T16:00:00.000Z</published>
-    <updated>2016-06-01T09:48:39.000Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;前几日母亲节的时候，在闲聊中，肖雪的母亲谈到她最近在书店购买了这本书，聊到这本书的封面简介，也聊到这本书和我之前读过的一本《徒步中国》类似，都是关于一个人徒步走很远的路的故事。回头和肖雪聊，从她那也得到了一些关于这本书的评价。正好自己又想读一本未曾出现在自己计划中的书，我就也把这本书找来翻一翻了。&lt;/p&gt;
-&lt;p&gt;另外，这也是我头一次很正式地写一篇读后感，期待能以此渐渐培养更好的阅读习惯，帮助自己更好地总结自己阅读的书籍。同时，藉此锻炼自己的写作能力，便于自己更好地分享自己，也作为自己建设个人主页的一块基石。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;评价&quot;&gt;&lt;a href=&quot;#评价&quot; class=&quot;headerlink&quot; title=&quot;评价&quot;&gt;&lt;/a&gt;评价&lt;/h2&gt;&lt;p&gt;第一次阅读完这本书，我断断续续地总共使用了三天约4个小时。有许多的感悟，可零碎的想法又不知如何集结在一起，就再阅读了一遍。知道了结局，知道了主人公和妻子的僵硬关系是由于丧子之痛，知道了其它更多信息之后，第二遍的阅读，也更加清晰易懂起来。&lt;/p&gt;
-&lt;p&gt;或许这也是因为我阅读习惯不是很好的缘故，对作者这样的扑朔迷离的写作手法，最开始有些不能适从，但习惯了之后，就也津津有味，吸引着我一点点揭开整个故事的背景，合上书本的时候，不禁让我恍然觉得“啊，原来是这么一回事啊”。另外我也改善自己的阅读习惯，有些书需要细嚼慢咽，就需要静下心来慢慢读不能贪快啊。&lt;/p&gt;
-&lt;p&gt;对这类书，有唯有静下心来细读，才更能理解作者的感悟。我自觉读书还不多，细读的书更少，对书中文字的分析太过浅略，就也不对本书做更多评价，直接谈谈自己的感想好了。&lt;/p&gt;
-&lt;h2 id=&quot;主人公&quot;&gt;&lt;a href=&quot;#主人公&quot; class=&quot;headerlink&quot; title=&quot;主人公&quot;&gt;&lt;/a&gt;主人公&lt;/h2&gt;&lt;p&gt;书中的主人公哈罗德是一位刚从酿酒厂退休六个月，正在家里平静地安心养老的老人。他一直觉得自己的生活一成不变，日复一日缺乏激情，与妻子的关系，也自从发生了一件悲伤的事情之后，变得十分僵硬。直到他 “心血来潮”地完成了一件大家头脑中认为不可能的事情，从XX走到了XX，为的是探望一位身患癌症的20年前的同事，并希望借此来让这位同事康复。虽然最终结果并未治好同事，但另一个角度却改善了他和妻子的关系，医治好了自己的生活。&lt;/p&gt;
-&lt;p&gt;我首先为哈罗德的毅力折服，一位平日不怎么锻炼的老人，毅然而然一走就是六百英里，并且只穿了一双帆船鞋，正如其英文标题 所言的“不可能的旅途”最终成为了事实。途中经历了许多的挫折，鞋子破了，脚磨破了，依旧坚韧的持续下去。虽然没有任何准备，但还是踏上了旅途。无论是否知道路线，是否携带指南针，总怀有强大的信念认为自己只要一步接一步就可以到达目的地。老人自始至终没有放弃，其毅力和勇气着实让我感到钦佩。&lt;/p&gt;
-&lt;p&gt;而同时也觉得，哈罗德在行动之前，太过于理想化自己的目标。哈罗德的信念“此行一定能治疗好这位同事”激励着他前进，可凭什么哈罗德会觉得自己的徒步之行能治疗好自己的同事呢？就如哈罗德的妻子所说，他不是医生，也不会看病，他过去什么都做不了。即便在道路途中遇到了一位肿瘤医生委婉表达了“希望渺茫”之后，哈罗德还是铁了心认为这是一定可行的。&lt;/p&gt;
-&lt;p&gt;我想，一个人有毅力有目标愿意为梦想奋斗，是值得称赞的。可若在追求目标的时候，只看到结果而忽略了实现这个目标的必要过程，一门心思想着自己正在做的这件事情就一定能实现自己的梦想，一门心思脑子里想的事情，不能更客观地看待自身的出境，在现实生活中，是难以真正实现自己的愿望。&lt;/p&gt;
-&lt;p&gt;或许，哈罗德此行的真正目标，其实并不是治疗自己的同事，而是希望藉此来一番自己心灵的净化之旅。希望抛弃自己原有生活的一切，简简单单地迈出一步又一步，渴求一段崭新的人生历程。从这个角度来说，哈罗德是实现了自己的目标，此行结束之后，化解了自己心里丧子的包袱，也和妻子的关系重归于好。&lt;/p&gt;
-&lt;p&gt;嗯，假若一个人面临了一个较大的挫折之后，在他眼前出现了一个恰到好处的目标。比如登上一座高山的山顶，只要咬紧牙关一步一步迈开步伐就可以实现。那我想这人对于当下的目标，会有十分大的动力。因为会觉得，除此眼下的这个目标以外，就别无他求了。并且当他在实现了这个目标的时候，能因此在心灵上得到一丝的慰藉。虽然有过坎坷有过失败，但登上山顶证实自己能战胜困难，完成一个新的成就能让自己重拾信心，并激励自己在人生的道路上，度过一个又一个坎坷。哈哈，题外话，这大概就是生活中人们需要不断挑战自己的意义了吧。&lt;/p&gt;
-&lt;h2 id=&quot;情节概要&quot;&gt;&lt;a href=&quot;#情节概要&quot; class=&quot;headerlink&quot; title=&quot;情节概要&quot;&gt;&lt;/a&gt;情节概要&lt;/h2&gt;&lt;p&gt;本书的开头，叙述的是主人公哈罗德有一天早上收到了一封完全没有预料到的，20年以前的女同事写来的，告诉哈罗德她患了癌症并特意来告别的信。收到信后哈罗德和他的妻子第一反应是很惊讶，而后哈罗德觉得自己似乎应该做点儿什么，便很快地完成了自己的回信，并即刻出门希望能快些投递到邮箱当中。&lt;br&gt;在步行前往邮箱的路程中，哈罗德开始回忆，开始回忆这五十年来自己到底做了些什么，渐渐觉得自己的生活实在太过苦闷，而且还一直一成不变。很快，他到达了第一个邮箱，可此时他早已陷入了自己的思绪，希望能再多走一些路。于是他走往了下一个邮箱，并渐渐觉得，自己能做的事情实在太少了，希望能为自己20年前的女同事做更多的事情，而不是简单回封信。就这样，他从一个邮箱走到下一个邮箱，并决定这么走路过去看完患病的女同事。&lt;/p&gt;
-&lt;p&gt;即使没有携带任何装备，连自己的手机都没有携带，还只穿了一双帆船鞋，就这么凭借着治疗好自己以前的好友的信念，开始了一段长达五百英里的徒步之行。徒步过程中，他遇到了很多新奇的事情，也回想了很多过去。似乎，这么一段路程，除了在朝着好友走去以外，也是在整理自己内心的思绪。我们知道，哈罗德的内心，还有一个很沉重的包袱，包括他和妻子的关系，包括他的儿子。&lt;/p&gt;
-&lt;p&gt;一路之行，发生了这么多的故事。其中有遇到过危险并受到友好的路人朋友帮助，也不知不觉地因自己的旅途让自己出了名，媒体大肆报道并出现了追随者，和追随者之间也有悲有喜，自己与妻子的关系僵硬，而又渐渐融洽。最终哈罗德独自到达了终点。在即将到达终点时，哈罗德也曾考虑过放弃，也因自己脏乱不堪的行装打扮受到周围人的排挤。而后，也在妻子的鼓励下，整理了行装，鼓起了勇气迈进了疗养院。可当他在与他好友见面之后，他又再次明白过来，自己什么都改变不了，五百英里的坚持，全都是自己的幻想。&lt;/p&gt;
-&lt;p&gt;这段旅途，有些事情哈罗德无法改变，而另一些事情，却也因此发生了变化。哈罗德最终放下了自己内心的包袱，又和自己妻子的关系重归友善。这段旅途，除了哈罗德最初“治疗友人”的信念以外，也是哈罗德的“赎罪之旅”，是哈罗德自己内心的一段旅途啊。&lt;/p&gt;
-&lt;h2 id=&quot;见解&quot;&gt;&lt;a href=&quot;#见解&quot; class=&quot;headerlink&quot; title=&quot;见解&quot;&gt;&lt;/a&gt;见解&lt;/h2&gt;&lt;p&gt;嗯，本书最吸引我的地方，是旅途中“朝圣者们”加入哈罗德行列的这段时期。哈罗德进行着的这么一件让人觉得不可能的事情，渐渐为世人所知，具有了一定影响力。除了媒体的报道外，也陆续出现了许多的追随者。其中有真心实意的模仿者，却也不乏为了追逐个人利益的“局外人”。这些“局外人”在队伍中，为了实现自己的利益最大化，也近乎到了不择手段的地步。队伍渐渐壮大，队伍间的矛盾因此也越演越烈，早没有了最初的安静，哈罗德感到无所适从。“朝圣者”们的信念开始动摇，最后在“局外人”的挑拨下，竟也发生了“弃哈罗德而去”的事件。或许这对于追逐商业利益的家伙来说，能产生更多的话题，能让自己更加出名，能借着“哈罗德的不可能之旅”获得更多的利益吧。这让我想起了《阿甘正传》里面，阿甘持续地跑步成名之后，也出现众多的追求商业利益人。我想，在现实中，也大概是很常见的吧。或许这再正常不过了，但总觉得似乎有哪里味道不对。&lt;/p&gt;
-&lt;p&gt;在途中，哈罗德妻子也曾过来和哈罗德碰了面。很久没碰面了，离开时后两人还是很僵硬的感情，现在便出现了许多缓和的趋势。两人隔了二十年没有这么坐在一起心与心的交谈，看到俩人将压抑已久的东西都释放了出来，我内心很是感到宽慰和高兴。而在本书末尾，哈罗德看望了好友之后，他“一个悲伤的身影孤零零坐在长椅上”，妻子一步步走向哈罗德，温柔地和他谈话，鼓励他，支持他，紧紧握住他的手。我就感到，夫妻之间相互关怀，十分简单的美好。最后两人内心对于失去孩子的包袱完全放下，重归于好，也正是拯救了两人的内心，为这次旅途画上了圆满句号。&lt;/p&gt;
-&lt;h2 id=&quot;本书主题&quot;&gt;&lt;a href=&quot;#本书主题&quot; class=&quot;headerlink&quot; title=&quot;本书主题&quot;&gt;&lt;/a&gt;本书主题&lt;/h2&gt;&lt;p&gt;呼呼，读完本书，也让我再次回忆起心底的那股斗志。&lt;/p&gt;
-&lt;p&gt;有时候，坚持未必会取得成功，付出了一切未必会取得回报。可，如果不做出选择并一心前进，难道要继续停留在当下吗？做出改变，总是会遇到许多阻力。猴子想变成人之前需要剪掉尾巴，如果始终担心剪掉尾巴痛不痛，担心尾巴没了自己还灵不灵活，担心失去了尾巴会不会不习惯，这样始终犹豫不决，猴子就永远无法变成人。&lt;/p&gt;
-&lt;p&gt;生活中，往往需要鼓起斗志和勇气去做出某一个决定。而在做决定的时候，如果看不到风险，盲目地鼓起勇气，那就是莽撞。而如果能辨别风险，并愿意且能够承担它们，那我便足以相信这就是“勇气”。&lt;/p&gt;
-&lt;p&gt;搔首踟蹰，只能让我们走向衰老。鼓起勇气作出决定，斗志昂扬，人生的道路将绽放光彩。而一旦作出决定，便也希望能够将其决定进行到底。因为，如果总是在选择，而不采取实际行动，那就永远停留在起点呀。&lt;/p&gt;
-&lt;p&gt;PS: 做决定也有一个方式，那就是“渐进明细”，哈哈。以后阅读，我也当更加用心。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;前几日母亲节的时候，在闲聊中，肖雪的母亲谈到她最近在书店购买了这本书，聊到这本书的封面简介，也聊到这本书和我之前读过的一本《徒步中国》类似，都是关于一个人徒步走很远的路的故事。回头和肖雪聊，从她那也得到了一些关于这本书的评价。正好自己又想读一本未曾出现在自己计划中的书，我就也把这本书找来翻一翻了。&lt;/p&gt;
-&lt;p&gt;另外，这也是我头一次很正式地写一篇读后感，期待能以此渐渐培养更好的阅读习惯，帮助自己更好地总结自己阅读的书籍。同时，藉此锻炼自己的写作能力，便于自己更好地分享自己，也作为自己建设个人主页的一块基石。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="读后感" scheme="http://shirphie.com/categories/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
-    
-    
-      <category term="写作" scheme="http://shirphie.com/tags/%E5%86%99%E4%BD%9C/"/>
-    
-      <category term="读后感" scheme="http://shirphie.com/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
-    
-  </entry>
   
   <entry>
     <title>陪伴是此间最长情的告白</title>
@@ -173,66 +38,22 @@
   </entry>
   
   <entry>
-    <title>《思考致富》人生20个定律</title>
-    <link href="http://shirphie.com/2016/04/20/2016-4-20-message/"/>
-    <id>http://shirphie.com/2016/04/20/2016-4-20-message/</id>
-    <published>2016-04-19T16:00:00.000Z</published>
-    <updated>2016-04-20T05:12:30.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;重塑自己的一些基本思想，更加完善自己的人格。&lt;br&gt;2016年4月18日，认为目前自己最需要注意的：脚踏实地！&lt;br&gt;文中提到很多的品格，存在一个共通点，那就是自己的智力卓越，能做出明智的判断。&lt;br&gt;而如何才能让自己智力提高，那就是通过不断的勤奋学习，不断拓展自己的知识面，不断锻炼自己。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;人生20个定律&quot;&gt;&lt;a href=&quot;#人生20个定律&quot; class=&quot;headerlink&quot; title=&quot;人生20个定律&quot;&gt;&lt;/a&gt;人生20个定律&lt;/h1&gt;&lt;p&gt;总结自《思考致富》。&lt;/p&gt;
-&lt;h2 id=&quot;第一条：拜伦法则——授权后的信任&quot;&gt;&lt;a href=&quot;#第一条：拜伦法则——授权后的信任&quot; class=&quot;headerlink&quot; title=&quot;第一条：拜伦法则——授权后的信任&quot;&gt;&lt;/a&gt;第一条：拜伦法则——授权后的信任&lt;/h2&gt;&lt;p&gt;授权他人后就完全忘掉这回事，绝不干涉。是一种自信的表现，是一条事业的成功之途。&lt;br&gt;一个成功的领导，最大限度的利用其属下的能力，并全力支持而不是干涉下属。&lt;br&gt;如果有人放了错误，不是指责，而当鼓励安慰，并共同分析错误，研究解决问题的办法。&lt;/p&gt;
-&lt;h2 id=&quot;第二条：牢骚效应——发泄转变为激励&quot;&gt;&lt;a href=&quot;#第二条：牢骚效应——发泄转变为激励&quot; class=&quot;headerlink&quot; title=&quot;第二条：牢骚效应——发泄转变为激励&quot;&gt;&lt;/a&gt;第二条：牢骚效应——发泄转变为激励&lt;/h2&gt;&lt;p&gt;HopDay（发泄日），员工通过将内心的牢骚发泄出来，能产生激励作用。&lt;br&gt;建立一个有效的沟通渠道，激励员工的工作热情，了解他们的需要与情感，并加以有效的疏导和牵引。这样，才可能真正达到企业利润的最大化。&lt;/p&gt;
-&lt;h2 id=&quot;第三条：犬獒效应——竞争的作用&quot;&gt;&lt;a href=&quot;#第三条：犬獒效应——竞争的作用&quot; class=&quot;headerlink&quot; title=&quot;第三条：犬獒效应——竞争的作用&quot;&gt;&lt;/a&gt;第三条：犬獒效应——竞争的作用&lt;/h2&gt;&lt;p&gt;在生意上遇到强劲、精明的竞争对手，是用钱都买不到的“好事”。&lt;br&gt;超过对手乃是此生中获得成功、幸福的唯一途径。&lt;br&gt;凡不能在市场维持前两名的企业，都会面临被拍卖或裁撤的命运。&lt;/p&gt;
-&lt;h2 id=&quot;第四条：洛克忠告——监督促使员工紧迫&quot;&gt;&lt;a href=&quot;#第四条：洛克忠告——监督促使员工紧迫&quot; class=&quot;headerlink&quot; title=&quot;第四条：洛克忠告——监督促使员工紧迫&quot;&gt;&lt;/a&gt;第四条：洛克忠告——监督促使员工紧迫&lt;/h2&gt;&lt;p&gt;没有有效的监督，就不会有满意的工作绩效。&lt;br&gt;明智的管理者会利用监督这把利剑，促使员工们既有紧迫感，又满怀热情地投入到工作中去。&lt;/p&gt;
-&lt;h2 id=&quot;第五条：吉格勒定理——远大的目标&quot;&gt;&lt;a href=&quot;#第五条：吉格勒定理——远大的目标&quot; class=&quot;headerlink&quot; title=&quot;第五条：吉格勒定理——远大的目标&quot;&gt;&lt;/a&gt;第五条：吉格勒定理——远大的目标&lt;/h2&gt;&lt;p&gt;开始时心中就怀有一个高的目标，意味着从一开始你就知道自己的目的地在哪里，以及自己现在在哪里。朝着自己的目标前进，至少可以肯定，你迈出的每一步都是方向正确的。&lt;/p&gt;
-&lt;h2 id=&quot;第六条：洛克定律——恰当的目标&quot;&gt;&lt;a href=&quot;#第六条：洛克定律——恰当的目标&quot; class=&quot;headerlink&quot; title=&quot;第六条：洛克定律——恰当的目标&quot;&gt;&lt;/a&gt;第六条：洛克定律——恰当的目标&lt;/h2&gt;&lt;p&gt;对每个人来说，在实施目标时，只有当每个步骤即是未来指向的，又是富有挑战性的时候，它才是最有效的。&lt;br&gt;“篮球架”的高度。&lt;br&gt;千里之行，始于足下。脚踏实地，保持长久的热情。&lt;/p&gt;
-&lt;h2 id=&quot;第七条：韦特莱法则——勇于去做&quot;&gt;&lt;a href=&quot;#第七条：韦特莱法则——勇于去做&quot; class=&quot;headerlink&quot; title=&quot;第七条：韦特莱法则——勇于去做&quot;&gt;&lt;/a&gt;第七条：韦特莱法则——勇于去做&lt;/h2&gt;&lt;p&gt;所谓成功者，其与其他人的唯一区别就在于，别人不愿意去做的事，他去做了，而且全身心地去做。&lt;br&gt;成大事，只需要那么一点点勇气。&lt;/p&gt;
-&lt;h2 id=&quot;第八条：贝尔效应——成功的信心&quot;&gt;&lt;a href=&quot;#第八条：贝尔效应——成功的信心&quot; class=&quot;headerlink&quot; title=&quot;第八条：贝尔效应——成功的信心&quot;&gt;&lt;/a&gt;第八条：贝尔效应——成功的信心&lt;/h2&gt;&lt;p&gt;成功与“劳其筋骨、饿其体肤”、“三更灯火五更鸡”、“头悬梁，锥刺股”没有必然的联系。只要你对某一事业感兴趣，长久地坚持下去就会成功。&lt;br&gt;用行动来证明自己的能力，想着成功，你的内心就会形成为成功而奋斗的无穷动力。不管遇到什么困难，都要坚信自己一定能成功，那么，最终你也一定会成功。&lt;br&gt;要知道，你来到世间，就是为了成功。&lt;/p&gt;
-&lt;h2 id=&quot;第九条：杜根定律——自信&quot;&gt;&lt;a href=&quot;#第九条：杜根定律——自信&quot; class=&quot;headerlink&quot; title=&quot;第九条：杜根定律——自信&quot;&gt;&lt;/a&gt;第九条：杜根定律——自信&lt;/h2&gt;&lt;p&gt;与生活中一些安于现状不思进取害怕失败的人，永远只能滞留在没有成功的起点上一样，这些不愿主动找座位的乘客大多只能在上车时的落脚之处，一直站到下车。&lt;br&gt;自信、执着、富有远见、勤于实践，会让你握有一张人生之旅的永远坐票。&lt;/p&gt;
-&lt;h2 id=&quot;第十条：蜕皮效应——挑战自己&quot;&gt;&lt;a href=&quot;#第十条：蜕皮效应——挑战自己&quot; class=&quot;headerlink&quot; title=&quot;第十条：蜕皮效应——挑战自己&quot;&gt;&lt;/a&gt;第十条：蜕皮效应——挑战自己&lt;/h2&gt;&lt;p&gt;能不断超越自己，你终能取得成功。&lt;br&gt;每个人都有一定的安全区，你想跨越自己目前的成就，就不要画地自限。只有勇于接受挑战充实自我，你才会超越自己，发展得比想象中更好。&lt;br&gt;面对挫折，面对沮丧，我们需要坚持。看不见光明、希望，却仍然孤独、坚忍地奋斗着，这才是成功者的素质。只有这样，我们才能超越自己，成就自己。&lt;/p&gt;
-&lt;h2 id=&quot;第十一条：迪斯忠告——把握今天&quot;&gt;&lt;a href=&quot;#第十一条：迪斯忠告——把握今天&quot; class=&quot;headerlink&quot; title=&quot;第十一条：迪斯忠告——把握今天&quot;&gt;&lt;/a&gt;第十一条：迪斯忠告——把握今天&lt;/h2&gt;&lt;p&gt;只有把握好今天，才能走出昨天，开创明天。&lt;br&gt;《阿甘正传》&lt;/p&gt;
-&lt;h2 id=&quot;第十二条：罗伯特定理——希望&quot;&gt;&lt;a href=&quot;#第十二条：罗伯特定理——希望&quot; class=&quot;headerlink&quot; title=&quot;第十二条：罗伯特定理——希望&quot;&gt;&lt;/a&gt;第十二条：罗伯特定理——希望&lt;/h2&gt;&lt;p&gt;自己不打倒自己，就没有人能打倒自己。&lt;br&gt;人生可以没有很多东西，却唯独不能没有希望。有了希望就有了信心。有了信心，生命就生生不息。&lt;br&gt;坚定而自信地对自己说一声。“再试一次！”再试一次，你就可能达到成功的彼岸。&lt;/p&gt;
-&lt;h2 id=&quot;第十三条：杜利奥定理——积极&quot;&gt;&lt;a href=&quot;#第十三条：杜利奥定理——积极&quot; class=&quot;headerlink&quot; title=&quot;第十三条：杜利奥定理——积极&quot;&gt;&lt;/a&gt;第十三条：杜利奥定理——积极&lt;/h2&gt;&lt;p&gt;一个人如果心态积极，乐观地面对人生，乐观地接受挑战和应付麻烦事，那他就成功了一半。&lt;/p&gt;
-&lt;h2 id=&quot;第十四条：吉格定理——勤奋&quot;&gt;&lt;a href=&quot;#第十四条：吉格定理——勤奋&quot; class=&quot;headerlink&quot; title=&quot;第十四条：吉格定理——勤奋&quot;&gt;&lt;/a&gt;第十四条：吉格定理——勤奋&lt;/h2&gt;&lt;p&gt;对一个人来说，才能的养成需要后天的勤奋学习。&lt;br&gt;对一个企业来说，它的竞争力和优势同样在于不断地学习。&lt;/p&gt;
-&lt;h2 id=&quot;第十五条：隧道视野效应——开拓视野&quot;&gt;&lt;a href=&quot;#第十五条：隧道视野效应——开拓视野&quot; class=&quot;headerlink&quot; title=&quot;第十五条：隧道视野效应——开拓视野&quot;&gt;&lt;/a&gt;第十五条：隧道视野效应——开拓视野&lt;/h2&gt;&lt;p&gt;如何才能把眼光放长远一些，发现更大，但可能比较隐蔽的“大利益”呢？&lt;br&gt;麦当劳兄弟创立了麦当劳，最后却又失去了麦当劳，他们可以经营好一个店，却没有战略的眼光，看不到未来的趋势，所以经营了25年，一个店还是一个店，知道克罗克的出现，才把麦当劳打造成了一个王国。&lt;br&gt;明智的人总会在放弃微小利益的同时，获得更大的利益。&lt;/p&gt;
-&lt;h2 id=&quot;第十六条：皮尔斯定理——不断认识自己、完善自己&quot;&gt;&lt;a href=&quot;#第十六条：皮尔斯定理——不断认识自己、完善自己&quot; class=&quot;headerlink&quot; title=&quot;第十六条：皮尔斯定理——不断认识自己、完善自己&quot;&gt;&lt;/a&gt;第十六条：皮尔斯定理——不断认识自己、完善自己&lt;/h2&gt;&lt;p&gt;只有先知道自己的无知，才能形成自己虚心向人学习的动力，才能发掘潜力，不断取得进步，达到预定的目标，迈向成功。意识到无知，是有知的开始。&lt;/p&gt;
-&lt;h2 id=&quot;第十七条：特里法则——承认错误&quot;&gt;&lt;a href=&quot;#第十七条：特里法则——承认错误&quot; class=&quot;headerlink&quot; title=&quot;第十七条：特里法则——承认错误&quot;&gt;&lt;/a&gt;第十七条：特里法则——承认错误&lt;/h2&gt;&lt;p&gt;承认错误是一个人最大的力量源泉。&lt;/p&gt;
-&lt;h2 id=&quot;第十八条：比伦定律——抓住机会，用于尝试。&quot;&gt;&lt;a href=&quot;#第十八条：比伦定律——抓住机会，用于尝试。&quot; class=&quot;headerlink&quot; title=&quot;第十八条：比伦定律——抓住机会，用于尝试。&quot;&gt;&lt;/a&gt;第十八条：比伦定律——抓住机会，用于尝试。&lt;/h2&gt;&lt;p&gt;若是你在一年中不曾有过失败的记载，你就未曾勇于尝试各种应该把握的机会。&lt;/p&gt;
-&lt;h2 id=&quot;第十九条：基利定理——容忍失败&quot;&gt;&lt;a href=&quot;#第十九条：基利定理——容忍失败&quot; class=&quot;headerlink&quot; title=&quot;第十九条：基利定理——容忍失败&quot;&gt;&lt;/a&gt;第十九条：基利定理——容忍失败&lt;/h2&gt;&lt;p&gt;成功者之所以成功，只不过是他不被失败左右而已。&lt;br&gt;创新能力高的科技人才，大都具有极富创意、兴趣广泛、自发自动、不满足现状等特点，周边环境对他们的创新力有着极大的影响。而环境中的一个重要因素，就是容忍失败、鼓励冒险。只有这样的文化环境，才能充分让他们发挥创意，杜绝以消极评语，扼杀创新。&lt;/p&gt;
-&lt;h2 id=&quot;第二十条：卡贝定理——抵制诱惑&quot;&gt;&lt;a href=&quot;#第二十条：卡贝定理——抵制诱惑&quot; class=&quot;headerlink&quot; title=&quot;第二十条：卡贝定理——抵制诱惑&quot;&gt;&lt;/a&gt;第二十条：卡贝定理——抵制诱惑&lt;/h2&gt;&lt;p&gt;放弃是创新的钥匙。在为学会放弃之前，你将很难懂得什么是争取。&lt;br&gt;在众多的致命诱惑面前，太多的人忘却了理性的分析和选择，忘却了放弃，而任凭拥有和欲望的野马在陷阱密布的商界纵横驰骋。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;重塑自己的一些基本思想，更加完善自己的人格。&lt;br&gt;2016年4月18日，认为目前自己最需要注意的：脚踏实地！&lt;br&gt;文中提到很多的品格，存在一个共通点，那就是自己的智力卓越，能做出明智的判断。&lt;br&gt;而如何才能让自己智力提高，那就是通过不断的勤奋学习，不断拓展自己的知识面，不断锻炼自己。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="blog" scheme="http://shirphie.com/categories/blog/"/>
-    
-    
-      <category term="励志" scheme="http://shirphie.com/tags/%E5%8A%B1%E5%BF%97/"/>
-    
-  </entry>
-  
-  <entry>
     <title>肖雪，生日快乐！</title>
     <link href="http://shirphie.com/2016/04/20/2016-4-20-happy-birthday/"/>
     <id>http://shirphie.com/2016/04/20/2016-4-20-happy-birthday/</id>
     <published>2016-04-19T16:00:00.000Z</published>
-    <updated>2016-06-01T06:04:22.000Z</updated>
+    <updated>2016-06-02T01:54:53.000Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;肖雪，20岁了哦&quot;&gt;&lt;a href=&quot;#肖雪，20岁了哦&quot; class=&quot;headerlink&quot; title=&quot;肖雪，20岁了哦~&quot;&gt;&lt;/a&gt;肖雪，20岁了哦~&lt;/h2&gt;&lt;p&gt;祝你生日快乐！！&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;肖雪，20岁了哦&quot;&gt;&lt;a href=&quot;#肖雪，20岁了哦&quot; class=&quot;headerlink&quot; title=&quot;肖雪，20岁了哦~&quot;&gt;&lt;/a&gt;肖雪，20岁了哦~&lt;/h2&gt;&lt;p&gt;祝，生日快乐！！&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;嘿嘿，shirphie.com，这个域名就是我们的个人博客啦！&lt;/p&gt;
+&lt;p&gt;嘿嘿，shirphie.com，这个域名现在是个人博客啦！&lt;/p&gt;
 &lt;p&gt;加油！&lt;/p&gt;
-&lt;p&gt;和你持续进步~！充满阳光与活力~&lt;/p&gt;
+&lt;p&gt;持续进步~！充满阳光与活力~&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;肖雪，20岁了哦&quot;&gt;&lt;a href=&quot;#肖雪，20岁了哦&quot; class=&quot;headerlink&quot; title=&quot;肖雪，20岁了哦~&quot;&gt;&lt;/a&gt;肖雪，20岁了哦~&lt;/h2&gt;&lt;p&gt;祝你生日快乐！！&lt;/p&gt;
+      &lt;h2 id=&quot;肖雪，20岁了哦&quot;&gt;&lt;a href=&quot;#肖雪，20岁了哦&quot; class=&quot;headerlink&quot; title=&quot;肖雪，20岁了哦~&quot;&gt;&lt;/a&gt;肖雪，20岁了哦~&lt;/h2&gt;&lt;p&gt;祝，生日快乐！！&lt;/p&gt;
     
     </summary>
     
@@ -240,188 +61,6 @@
     
     
       <category term="历程" scheme="http://shirphie.com/tags/%E5%8E%86%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何正确地练习写作</title>
-    <link href="http://shirphie.com/2016/02/20/2015-03-02-how-to-write/"/>
-    <id>http://shirphie.com/2016/02/20/2015-03-02-how-to-write/</id>
-    <published>2016-02-19T16:00:00.000Z</published>
-    <updated>2016-06-01T05:31:44.000Z</updated>
-    
-    <content type="html">&lt;p&gt;原文摘自：cnfeat.com&lt;/p&gt;
-&lt;h2 id=&quot;初心&quot;&gt;&lt;a href=&quot;#初心&quot; class=&quot;headerlink&quot; title=&quot;初心&quot;&gt;&lt;/a&gt;初心&lt;/h2&gt;&lt;p&gt;2014年2月10日，我开始每天写千字文，到现在（2015年3月3日）已超一年，在这期间，我写了347篇文章，全部放在我的博客（cnfeat.com）和公众号（cnfeat）上。&lt;/p&gt;
-&lt;p&gt;起初我练习千字文的目的很简单：锻炼思考、表达、总结和分享的能力，通过写来提升自己。&lt;/p&gt;
-&lt;p&gt;写的作用，《重来》这本书说：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果准备在一堆人中挑出一个人来做某份工作，那就挑写作能力最好的那个。至于他有没有做过市场、销售、设计、编程或其他什么，倒并不那么重。他们的写作能力迟早会带来好处的。&lt;/p&gt;
-&lt;p&gt;这是因为，一个会写作的人，他厉害之处可不仅仅是会写作而已。文法清晰代表思路明晰。那些会写作的人懂得如何与他人进行沟通。他们使得事情变得更好理解了。他们擅于换位思考。他们懂得抓住重点。这些都是你想在一个应聘者身上看到的特质。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;一年前，我没有写作的习惯，既然要写，就先养成写作的习惯，当时恰好看到王佩的&lt;a href=&quot;http://www.baibanbao.net/2014/02/02/is-it-possible-to-write-1000-words-per-day.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《每天写一篇千字文靠谱吗？》&lt;/a&gt;，和简叔的&lt;a href=&quot;http://www.jianshu.com/p/53eea6022d58&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《如何坚持每天写一千字》&lt;/a&gt;，我当时就想，既然他们都说好，那我就开练吧。&lt;/p&gt;
-&lt;p&gt;我当时练习千字文还有两个目的：&lt;/p&gt;
-&lt;p&gt;一是想锻炼自己持续做一件事的能力&lt;/p&gt;
-&lt;p&gt;二是想通过写来逼自己更多地接触外界，接收更多的信息（阅读、观影、外出、社交……）通过持续的信息输出来强制自己进行信息输入。&lt;/p&gt;
-&lt;p&gt;这样做带来效果还不错，起码在此期间，千字文的压力迫使我去阅读书籍，写读书笔记，参加社会活动，组建写作社群，认识了各行业的人，这对当时的我都是非常有益的。&lt;/p&gt;
-&lt;p&gt;这期间，我自己摸索了一点写作的经验，大家可以去博客看看&lt;a href=&quot;http://cnfeat.com/categories/%E5%8D%83%E5%AD%97%E6%96%87%E4%B8%8E%E5%86%99%E4%BD%9C/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;「千字文与写作」&lt;/a&gt;的分类，虽然比较稚嫩，但是毕竟也是真实的记录，相当有比较意义。&lt;/p&gt;
-&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;在写千字文的过程中，我渐渐地发现了以下问题：&lt;/p&gt;
-&lt;h3 id=&quot;一、形成舒适区&quot;&gt;&lt;a href=&quot;#一、形成舒适区&quot; class=&quot;headerlink&quot; title=&quot;一、形成舒适区&quot;&gt;&lt;/a&gt;一、形成舒适区&lt;/h3&gt;&lt;p&gt;各种被千字文牵引而成的信息输入行为模式（例如阅读、写笔记、总结等）已经养成，写作也已变成一种日常，也就是说，初始目的已经达成，我现在已经进入了每天写千字文的「舒适区」，每天写1000字这件事情对我而言不再是一件难事，我需要进去另一个「学习区」。&lt;/p&gt;
-&lt;h3 id=&quot;二、思考太浅&quot;&gt;&lt;a href=&quot;#二、思考太浅&quot; class=&quot;headerlink&quot; title=&quot;二、思考太浅&quot;&gt;&lt;/a&gt;二、思考太浅&lt;/h3&gt;&lt;p&gt;每天写千字文，强制信息输出，好容易会将接到是每天写容易将浅度思考的内容分享出去，就好像拿着一个盘去接水，每次接到一点点就泼出去。比如说我最近写的关于实践卡写作法的文章，我在刚接触这个知识点之后就要匆匆忙忙地要将自己的认识和看法写出去，这种短时间得出东西毕竟十分粗浅薄寡。&lt;/p&gt;
-&lt;p&gt;虽然说这篇写出来的文章可以后续修改，但事实往往残酷：1.0版的想法放出去后，为了赶每天的千字文，并没有再多的时间和动力去做2.0，3.0版的修改（用大脑认知来讲，文章公开发表之后大脑误以为已经完成了指令，不会再驱动人去完善后续版本）。&lt;/p&gt;
-&lt;h3 id=&quot;三、产出质量&quot;&gt;&lt;a href=&quot;#三、产出质量&quot; class=&quot;headerlink&quot; title=&quot;三、产出质量&quot;&gt;&lt;/a&gt;三、产出质量&lt;/h3&gt;&lt;p&gt;以前的想法是：既然无法每篇都能写出高质量的文章，那么通过数量的堆积，经历试错，我可能可以捉摸到读者的口味，然后写出高质量的文章。但现在的事实是，我已深知自己的浅薄，需要读更多的书，接触更多源头的知识，才能写出更好的东西。&lt;/p&gt;
-&lt;h2 id=&quot;改变&quot;&gt;&lt;a href=&quot;#改变&quot; class=&quot;headerlink&quot; title=&quot;改变&quot;&gt;&lt;/a&gt;改变&lt;/h2&gt;&lt;p&gt;察觉问题不久后，我进入了阳志平发起的开智青年故事会（&lt;a href=&quot;http://t.cn/RwYcbCP&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;「开智微信群」入群指南&lt;/a&gt;）,阳志平老师指出每天写千字文的不妥之处。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;隐私的文字、技术类、笔记类的文章可以每天写，但公开的每天进行持续地文字输出，会给创造力进行损伤，文气会被稀释。天天坚持对外输出这种事情，容易将酷的底线变低，同时你的大脑会习惯这种线性操作，日益写不出更好的文章。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;虽然自己已经隐隐意识到以上弊端，但当局者迷，或者复盘的意识和能力还不够，或者人就是愿意停留在「舒适区」，还不愿意正视事实。&lt;/p&gt;
-&lt;p&gt;听到这个指正之后，自己猛地惊出一身冷汗，若不是有前辈指点，我岂不是还要原地踏步？&lt;/p&gt;
-&lt;p&gt;接下来，阳志平老师还给出写作建议：&lt;/p&gt;
-&lt;h3 id=&quot;与其持续写低质量的东西，不如储力写高质量的文章&quot;&gt;&lt;a href=&quot;#与其持续写低质量的东西，不如储力写高质量的文章&quot; class=&quot;headerlink&quot; title=&quot;与其持续写低质量的东西，不如储力写高质量的文章&quot;&gt;&lt;/a&gt;与其持续写低质量的东西，不如储力写高质量的文章&lt;/h3&gt;&lt;p&gt;厚积薄发，在适当的时候爆发出来，这样才算是酷的事情，做酷的事情比每天一些小事情所带来的效应会强的得多。&lt;/p&gt;
-&lt;p&gt;所谓生命，是要写出最伟大的作品；所谓时间，是要浪费在最凝聚心力的伟大作品上。&lt;/p&gt;
-&lt;h3 id=&quot;争取高水准人群的认同&quot;&gt;&lt;a href=&quot;#争取高水准人群的认同&quot; class=&quot;headerlink&quot; title=&quot;争取高水准人群的认同&quot;&gt;&lt;/a&gt;争取高水准人群的认同&lt;/h3&gt;&lt;p&gt;社交媒体，因为庸众太多，太容易获取认可。而这个廉价的认可，会错失一些好机会。一旦年轻时，在社交媒体上获取点赞太多，比较对象就不是历史上的牛人、大家了，就是那群给你点赞的人了，一定要得到高水准的少数人认可自己，才不会陷入妄人境界，成为民科或者妄人。&lt;/p&gt;
-&lt;p&gt;是先有了高水准的少数人认可你，才接着是更多少数人，最后才是大众。每一步，遵从7%原理。而不是反之，这样根基最踏实，否则成名也快，衰落也快。&lt;/p&gt;
-&lt;h2 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h2&gt;&lt;h3 id=&quot;写作可以练习&quot;&gt;&lt;a href=&quot;#写作可以练习&quot; class=&quot;headerlink&quot; title=&quot;写作可以练习&quot;&gt;&lt;/a&gt;写作可以练习&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.yangzhiping.com/psy/wenxin.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《文心书话》&lt;/a&gt;说到&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;中国文论讲究不要轻易点出文章「机心」，任读者自行领悟，使得中国文学中充斥着大量不可言说的「道」。一旦探讨写作的具体技巧与指导性强的术，往往被讥笑。所以写作的道始终掌握在少数人手中，站在一个云端来俯视与鄙视那些在金线之下挣扎的百姓们。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;由此可见，写作自有方法可循，只不过那些「高人们」遮遮掩掩，故弄玄虚，对别人说「功夫在诗外」「文章本天成」，就像考试时得到一本黄冈秘题，练功时得到一本《葵花宝典》，自己生怕别人学到自己引以为傲的手艺。&lt;/p&gt;
-&lt;p&gt;题外话：我有一朋友就深受这种思想的毒害，坚信好文章是靠灵感爆发，随心而成的，结果我等了他好久，他也没有随心出一篇，就算好久随心出一篇，在我看来，那也是无关痛痒的QQ空间式的文章，白白浪费好苗子。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;写作要靠灵感，那么，灵感是否可以习得？在七八年前，刘未鹏就研究过灵感的形成，人一生中占据一个显著比例的&lt;a href=&quot;http://mindhacks.cn/2009/12/20/dark-time/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;「暗时间」&lt;/a&gt;，这段「暗时间」存在于你走路、买菜、洗脸洗手、坐公车、逛街、出游、吃饭、睡觉的过程之中，你可以充分利用这些时间进行思考，反刍和消化平时看和读的东西，让你的认识能够脱离照本宣科的层面。这段时间看起来微不足道，但日积月累将会产生庞大的效应。&lt;a href=&quot;http://blog.csdn.net/pongba/article/details/2270171&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;你利用到的「暗时间」越多，灵感的产出率就越高。&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;刻意练习&quot;&gt;&lt;a href=&quot;#刻意练习&quot; class=&quot;headerlink&quot; title=&quot;刻意练习&quot;&gt;&lt;/a&gt;刻意练习&lt;/h3&gt;&lt;p&gt;刻意练习不是傻乎乎地，天天坚持做一件事情，而是主动地，有计划地、艰苦地，有创造性去做。&lt;/p&gt;
-&lt;p&gt;关于刻意练习，阳志平老师的这篇文章&lt;a href=&quot;http://www.yangzhiping.com/psy/Deliberate-Practice.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《心智工具箱（12）：刻意练习》&lt;/a&gt;提到&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;刻意练习的任务难度要适中、能收到反馈、有足够的次数重复练习、学习者能够纠正自己的错误。如此如此，必成大器。 其中，多数不靠谱的成功学在于选择了错误的练习方式，虽说喊的口号是刻意练习但实质不是刻意练习，因为没有激活长时工作记忆能力。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;同人于野在&lt;a href=&quot;http://www.geekonomics10000.com/519&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《练习一万小时成天才》&lt;/a&gt;中提到&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;刻意练习不好玩，它要求练习调动大量的身体和精神资源，全力投入。如果你觉得在享受练习的过程，那就不是刻意练习。 找一本小说一边喝咖啡一边看，在一个空闲的下午打场球，这样的活动都非常令人愉快，但是做再多也不会提高技艺。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;正确的练习方式应该是这样：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;只在「学习区」练习；&lt;/li&gt;
-&lt;li&gt;把要训练的内容分成有针对性的小块，对每个小块进行重复练习；&lt;/li&gt;
-&lt;li&gt;在练习的过程中，随时能获得有效的反馈；&lt;/li&gt;
-&lt;li&gt;练习时注意力必须高度集中。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;对以上四点做一个简短的补充：&lt;/p&gt;
-&lt;h4 id=&quot;学习区&quot;&gt;&lt;a href=&quot;#学习区&quot; class=&quot;headerlink&quot; title=&quot;学习区&quot;&gt;&lt;/a&gt;学习区&lt;/h4&gt;&lt;p&gt;练习写作要界定自己的舒适区和学习区，随着知识和技能的掌握程度，舒适区和学习区都会发生转变，要及时调整学习计划和练习方法。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;有效的练习任务必须在学习区内进行，它具有高度的针对性。训练者必须随时了解自己最需要改进的地方。一旦已经学会了某个东西，就不应该在上面花时间，应该立即转入下一个困难点。&lt;/p&gt;
-&lt;p&gt;在舒适区做事，叫生活；在学习区做事，才叫练习。真正的练习不是为了完成一定的量，练习的精髓是要持续地做自己做不好的事情。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;分块练习&quot;&gt;&lt;a href=&quot;#分块练习&quot; class=&quot;headerlink&quot; title=&quot;分块练习&quot;&gt;&lt;/a&gt;分块练习&lt;/h4&gt;&lt;p&gt;将要刻意练习的领域分割成各个小块，然后进行有针对的训练。例如哥伦比亚大学的写作课就要包含有描述声音的课程，要说出：那个声音是什么颜色，什么形状，什么质感，给人什么联想，&lt;/p&gt;
-&lt;h4 id=&quot;即时反馈&quot;&gt;&lt;a href=&quot;#即时反馈&quot; class=&quot;headerlink&quot; title=&quot;即时反馈&quot;&gt;&lt;/a&gt;即时反馈&lt;/h4&gt;&lt;p&gt;为什么那多健过身的人都推荐新手去请私教，因为私教可以即时纠正新手的错误，得到最及时有效的反馈，正反馈越多，进步就越大。&lt;/p&gt;
-&lt;p&gt;关于即时反馈，大家可以看看哥伦比亚大学写作课程的反馈安排：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;像我这样的曾经的文学青年，如果有鲁迅或王安忆当面批改作品，有舒尔茨每天都在一旁拎着耳朵不断追问「你听到了什么」，最起码我们的文学梦可以做得更长久一些吧。严锋&lt;a href=&quot;http://news.sina.com.cn/c/2009-12-09/112519222865.shtml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《作家是怎样炼成的》&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;如果要了解写作的「分块练习」和「即时反馈」，还可以看看这篇&lt;a href=&quot;http://www.dfdaily.com/html/150/2013/10/9/1077236.shtml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《大学写作是怎样炼成的——哥大核心课程之写作课》&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其中，即时反馈效果最好的环境就是群体学习，阳志平老师的&lt;a href=&quot;http://www.yangzhiping.com/psy/Deliberate-Practice.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《心智工具箱（12）：刻意练习》&lt;/a&gt;提到：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;找到学习共同体：因为大量知识存在于学习共同体的实践中，不是书本中，所以有效的学习不是关门苦练，而是找到属于自己的学习小团体。如程序员在类似于github这样的网站练习编程。&lt;/li&gt;
-&lt;li&gt;隐性知识显性化：隐性知识是使人们有能力利用概念、事实以及程序来解决现实问题的知识。&lt;/li&gt;
-&lt;li&gt;模仿榜样：榜样可以是现实生活中的导师，也可以是网上的导师；&lt;/li&gt;
-&lt;li&gt;培养多样性：在多种情境中实践，以此强调学习广阔的应用范围。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;高度集中的注意力&quot;&gt;&lt;a href=&quot;#高度集中的注意力&quot; class=&quot;headerlink&quot; title=&quot;高度集中的注意力&quot;&gt;&lt;/a&gt;高度集中的注意力&lt;/h4&gt;&lt;p&gt;当你做一件事，这件事的难度与你的能力、兴趣以及技术相符（刻意练习就要找这种任务来做），你就会全神贯注，行为和意识高度统一，随之进入一种被称之为「心流」（Flow）的状态。在这种状态中，你会忘我，忘记时间、忘记其他所有不相关的东西，完全沉静在某项事物或情境中，从而找到极致的乐趣，&lt;/p&gt;
-&lt;p&gt;虽然说刻意练习不好玩，但当练习达到心流状态，好玩的东西就随之而来，这种状态就像好吃的东西一样，你会念念不忘，想方设法再去进入心流，到这个时候，就无须再使用意志力去学习一种东西，而是靠内驱动力去学习一样东西，这样学习才会持久。&lt;/p&gt;
-&lt;h3 id=&quot;写作频率和练习文体&quot;&gt;&lt;a href=&quot;#写作频率和练习文体&quot; class=&quot;headerlink&quot; title=&quot;写作频率和练习文体&quot;&gt;&lt;/a&gt;写作频率和练习文体&lt;/h3&gt;&lt;p&gt;阳志平老师建议写作的频率为：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;每周原创一到两篇&lt;/li&gt;
-&lt;li&gt;每周翻译一篇&lt;/li&gt;
-&lt;li&gt;每周读书笔记一篇&lt;/li&gt;
-&lt;li&gt;每月精华一篇（三千到六千字）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;1、原创&quot;&gt;&lt;a href=&quot;#1、原创&quot; class=&quot;headerlink&quot; title=&quot;1、原创&quot;&gt;&lt;/a&gt;1、原创&lt;/h4&gt;&lt;p&gt;原创就是独立完成的创作，写出自己独有的东西。&lt;/p&gt;
-&lt;h4 id=&quot;2、翻译&quot;&gt;&lt;a href=&quot;#2、翻译&quot; class=&quot;headerlink&quot; title=&quot;2、翻译&quot;&gt;&lt;/a&gt;2、翻译&lt;/h4&gt;&lt;p&gt;翻译是提高写作最快的捷径。&lt;/p&gt;
-&lt;p&gt;找名家翻译过名篇，不看翻译，自己先试着翻译，然后对照自己的翻译与名家的翻译，找出区别，最后再翻译一次。&lt;/p&gt;
-&lt;p&gt;推荐用书：&lt;a href=&quot;http://book.douban.com/subject/20453368/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《玩具屋九讲》&lt;/a&gt;，这本书可以用来精磨慢读。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;关于慢读，同人于野在&lt;a href=&quot;http://www.geekonomics10000.com/376&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《用强力研读书》&lt;/a&gt;中提到，读书人的一个秘密就是，读得慢，吸收知识和增长内力的效率会更高。&lt;/p&gt;
-&lt;p&gt;好书应该至少读两遍，第一遍用来理解，第二遍用来强力研读（怎么强力研读？在后面在做读书笔记部分会有介绍）。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;阳志平老师提到的翻译名家有：王佐良、余光中、钱歌川 、思果 、刘宓庆、郭岱宗。&lt;/p&gt;
-&lt;p&gt;关于翻译的书单：&lt;a href=&quot;http://www.douban.com/doulist/13967508/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;译道技法&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在学习写作和翻译的过程中，也可以运用恶魔奶爸的透析法来学习英语。毕竟掌握了英语，你才能接触到信息源头。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;3、读书笔记&quot;&gt;&lt;a href=&quot;#3、读书笔记&quot; class=&quot;headerlink&quot; title=&quot;3、读书笔记&quot;&gt;&lt;/a&gt;3、读书笔记&lt;/h4&gt;&lt;p&gt;写一篇好的读书笔记是一件挺费心力的事，同人于野在&lt;a href=&quot;http://www.geekonomics10000.com/376&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《用强力研读书》&lt;/a&gt;提到的强力研读法就是一个不错的方法。&lt;/p&gt;
-&lt;p&gt;先选对书，首先，只有为了理解某个我们原来不懂的东西而读书，才值得认真对待。其次，读书应该以自我为主，而不是以书为主。&lt;/p&gt;
-&lt;p&gt;强力研读要求读书笔记必须包括四方面的内容&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;清晰地表现每一章的逻辑脉络；&lt;/li&gt;
-&lt;li&gt;带走书中所有的亮点；&lt;/li&gt;
-&lt;li&gt;有大量的自己的看法和心得；&lt;/li&gt;
-&lt;li&gt;发现这本书和以前读书读过的其他书或文章的联系；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;4、精华（三千到六千字）&quot;&gt;&lt;a href=&quot;#4、精华（三千到六千字）&quot; class=&quot;headerlink&quot; title=&quot;4、精华（三千到六千字）&quot;&gt;&lt;/a&gt;4、精华（三千到六千字）&lt;/h4&gt;&lt;p&gt;这篇文章应该凝聚练习者在一个领域内学到的心得、经验和总结等，建议按照写维基的形式来写，文章的架构可以参考一本书的目录，通过树形机构逼自己系统地思考问题。将文章结构搭建完成之后，再完成细枝末节。&lt;/p&gt;
-&lt;p&gt;一个月的时间，足以在一个陌生的领域打开一个口子，大可以将此文当作是自己钻研学习的小论文，放出来让市场接受检验，写长文尤其锻炼人，要写就要写出思维密集高的文章，既然花费而来一个月的时间来写这篇文章，就要写得好一点，让读文章人多多受益，从而吸引更多的人来看文章，这样才算赢了。&lt;/p&gt;
-&lt;h3 id=&quot;开始基础训练&quot;&gt;&lt;a href=&quot;#开始基础训练&quot; class=&quot;headerlink&quot; title=&quot;开始基础训练&quot;&gt;&lt;/a&gt;开始基础训练&lt;/h3&gt;&lt;p&gt;大家以前都上过语文课，写过作文，对写进教材的文章十分尊敬，总觉他们这样写是一定有道理的，只不过是自己有问题没搞懂，但事实上，被编进教材的文章其实也有很多问题，例如朱自清的《荷塘月色》就&lt;a href=&quot;http://www.yangzhiping.com/psy/wenxin06.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;滥用了比喻&lt;/a&gt;，那时候做学生，老师讲什么就听什么，一味地接收，根本不懂得学完之后跳出来返观教材，往往是接收了一点之后就马上去考试，考试一过就忘记了。&lt;/p&gt;
-&lt;p&gt;所以，要重新开始写作，就必须需要重新开始学习语文基础知识，同时向大师们学习。&lt;/p&gt;
-&lt;p&gt;那么，怎么学习语文？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;中国写作传统不同于西方，两者美学趣味大相径庭。如果说西方是史诗与叙事诗传统，中国则是抒情诗传统。学习写作，还得在西方与古典中寻。 去古典中体悟最美的抒情；往西方练习简约的叙事之道。其中不二法门就是，看最优秀作家的文章，将自己沉浸在美文体验中。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;按照阳志平老师的观点，学习习作可以向这些人学习。&lt;/p&gt;
-&lt;p&gt;西方是蒙田祖师爷=》休谟=》毛姆=》怀特=》奥威尔 =》平克；&lt;/p&gt;
-&lt;p&gt;中国则是韩愈=》辛弃疾=》钱钟书=》余光中或王鼎钧。&lt;/p&gt;
-&lt;h3 id=&quot;文章推荐&quot;&gt;&lt;a href=&quot;#文章推荐&quot; class=&quot;headerlink&quot; title=&quot;文章推荐&quot;&gt;&lt;/a&gt;文章推荐&lt;/h3&gt;&lt;p&gt;阳志平&lt;a href=&quot;http://www.yangzhiping.com/psy/wenxin.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《文心书话》&lt;/a&gt;，&lt;a href=&quot;http://www.yangzhiping.com/files/pubs/wenxin_01.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PDF地址&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;王烁：&lt;a href=&quot;http://wangshuo.blog.caixin.com/archives/821&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《有效写作十三篇》&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;书单推荐：&quot;&gt;&lt;a href=&quot;#书单推荐：&quot; class=&quot;headerlink&quot; title=&quot;书单推荐：&quot;&gt;&lt;/a&gt;书单推荐：&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.douban.com/doulist/37792154/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《文心书话》第一章推荐阅读书目：&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.douban.com/doulist/37792154/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.douban.com/doulist/37792154/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.douban.com/doulist/1269878/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阳志平：开始写作吧&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.douban.com/doulist/1269878/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.douban.com/doulist/1269878/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.xiaoqiushui.com/archives/8900.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;萧秋水：《作文三书》切实帮助提升写作水平的书 &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.douban.com/doulist/37792472/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.douban.com/doulist/37792472/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;备注：早期叫《作文三书》，再版后增加一书，改为《作为四书》。&lt;/p&gt;
-&lt;hr&gt;
-</content>
-    
-    <summary type="html">
-    
-      如果准备在一堆人中挑出一个人来做某份工作，那就挑写作能力最好的那个。至于他有没有做过市场、销售、设计、编程或其他什么，倒并不那么重。他们的写作能力迟早会带来好处的。
-    
-    </summary>
-    
-      <category term="转载" scheme="http://shirphie.com/categories/%E8%BD%AC%E8%BD%BD/"/>
-    
-    
-      <category term="转载" scheme="http://shirphie.com/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="知识管理" scheme="http://shirphie.com/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>谈读书</title>
-    <link href="http://shirphie.com/2015/12/27/2015-12-27-talk-about-read/"/>
-    <id>http://shirphie.com/2015/12/27/2015-12-27-talk-about-read/</id>
-    <published>2015-12-26T16:00:00.000Z</published>
-    <updated>2016-04-20T04:37:36.000Z</updated>
-    
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;注：此文是2015年12月27日的旧稿。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;读书，真的读了很多很多书就能很厉害吗？&lt;br&gt;我想未必……&lt;br&gt;也许书籍确实能指导思想，但是如果不做实事，那就像是数据库一样了。&lt;br&gt;一边读书，一边生活，这才是比较好的做法吧……&lt;br&gt;学以致用~&lt;/p&gt;
-&lt;p&gt;而另一边，有些书本，就是用来消磨时间的哦~&lt;br&gt;仅仅是乐趣，读着让人开心而已。并不要求每本书都需要给自己什么什么以为远大的启示，私以为也不应该完全的目的的心态~&lt;br&gt;当然，有些书就是为了钻研知识的，这时就应该去有目的。&lt;/p&gt;
-&lt;p&gt;嗯，也许不对呢。&lt;br&gt;即使是仅仅乐趣的书，总有读它的理由，即使理由是简单的获取乐趣~&lt;/p&gt;
-&lt;p&gt;我手边的这本书，三毛传，虽是信手的一本书，不过我不正是想了解一下三毛吗？嗯！&lt;br&gt;开始读书了。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      一边读书，一边生活。
-    
-    </summary>
-    
-      <category term="blog" scheme="http://shirphie.com/categories/blog/"/>
-    
-    
-      <category term="写作" scheme="http://shirphie.com/tags/%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
